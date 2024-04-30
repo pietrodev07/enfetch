@@ -31,4 +31,12 @@ export class enfetch {
       ...this.defaultConfig,
     });
   }
+
+  public async connect<D>(url: string, options?: RequestSchema<null>) {
+    return request<null, D>(url, {
+      method: "CONNECT",
+      ...options,
+      ...this.defaultConfig,
+    });
+  }
 }
