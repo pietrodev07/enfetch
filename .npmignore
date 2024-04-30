@@ -1,0 +1,7 @@
+src/
+test/
+docs/
+.github/
+.gitignore
+.prettierignore
+.prettierrc
