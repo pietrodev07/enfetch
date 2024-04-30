@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "ES6",
+    "moduleResolution": "Bundler",
+    "target": "es2015",
+    "outDir": "./dist",
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*"]
+}
