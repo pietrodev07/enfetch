@@ -1,3 +1,5 @@
+import { ResponseSchema } from "../types";
+
 const contentTypeHandlers = {
   json: {
     pattern: /application\/json/,
@@ -24,3 +26,13 @@ const parseResponse = (response: Response) => {
 
   throw new Error(`Unsupported content type: ${contentType}`);
 };
+
+export const generateResponse = async <D>(
+  response: Response
+): Promise<ResponseSchema<D>> => ({
+  data: await parseResponse(response),
+  status: response.status,
+  statusText: response.statusText,
+  headers: response.headers,
+  url: response.url,
+});
