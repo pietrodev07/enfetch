@@ -71,4 +71,12 @@ export class enfetch {
       ...this.defaultConfig,
     });
   }
+
+  public async any<B, D = unknown>(
+    url: string,
+    method: string,
+    options?: RequestSchema<B>
+  ) {
+    return request<B, D>(url, { method, ...options, ...this.defaultConfig });
+  }
 }
