@@ -23,4 +23,12 @@ export class enfetch {
       ...this.defaultConfig,
     });
   }
+
+  public async options<D>(url: string, options?: RequestSchema<null>) {
+    return request<null, D>(url, {
+      method: "OPTIONS",
+      ...options,
+      ...this.defaultConfig,
+    });
+  }
 }
