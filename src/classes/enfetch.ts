@@ -55,4 +55,12 @@ export class enfetch {
       ...this.defaultConfig,
     });
   }
+
+  public async patch<B, D = unknown>(url: string, options?: RequestSchema<B>) {
+    return request<B, D>(url, {
+      method: "PATCH",
+      ...options,
+      ...this.defaultConfig,
+    });
+  }
 }
