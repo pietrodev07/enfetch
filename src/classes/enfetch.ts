@@ -63,4 +63,12 @@ export class enfetch {
       ...this.defaultConfig,
     });
   }
+
+  public async put<B, D = unknown>(url: string, options?: RequestSchema<B>) {
+    return request<B, D>(url, {
+      method: "PUT",
+      ...options,
+      ...this.defaultConfig,
+    });
+  }
 }
