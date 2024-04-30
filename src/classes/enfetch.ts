@@ -47,4 +47,12 @@ export class enfetch {
       ...this.defaultConfig,
     });
   }
+
+  public async post<B, D>(url: string, options?: RequestSchema<B>) {
+    return request<B, D>(url, {
+      method: "POST",
+      ...options,
+      ...this.defaultConfig,
+    });
+  }
 }
