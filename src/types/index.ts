@@ -1,3 +1,5 @@
+import { ZodType } from "zod";
+
 export interface DefaultRequestConfig extends Omit<RequestInit, "body"> {
   timeout?: number;
   maxRetries?: number;
@@ -10,4 +12,12 @@ export interface ResponseSchema<D> {
   headers: HeadersInit;
   data: D;
   url: string;
+}
+
+export interface RequestSchema<B> extends Omit<RequestInit, "body"> {
+  timeout?: number;
+  maxRetries?: number;
+  retryDelay?: number;
+  body?: B;
+  schema?: ZodType;
 }
