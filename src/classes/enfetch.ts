@@ -15,4 +15,12 @@ export class enfetch {
       ...this.defaultConfig,
     });
   }
+
+  public async head<D>(url: string, options?: RequestSchema<null>) {
+    return request<null, D>(url, {
+      method: "HEAD",
+      ...options,
+      ...this.defaultConfig,
+    });
+  }
 }
