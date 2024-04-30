@@ -39,4 +39,12 @@ export class enfetch {
       ...this.defaultConfig,
     });
   }
+
+  public async delete<D>(url: string, options?: RequestSchema<null>) {
+    return request<null, D>(url, {
+      method: "DELETE",
+      ...options,
+      ...this.defaultConfig,
+    });
+  }
 }
