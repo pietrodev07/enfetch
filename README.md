@@ -1,5 +1,9 @@
 # enfetch
 
+[![npm version](https://img.shields.io/npm/v/enfetch.js)](https://npmjs.com/package/enfetch.js)
+[![weekly downloads](https://img.shields.io/npm/dw/enfetch.js)](https://npmjs.com/package/enfetch.js)
+[![license](https://img.shields.io/npm/l/enfetch.js)](https://github.com/vclemenzi/enfetch.js/blob/main/LICENSE)
+
 Enfetch is a lightweight, simple and flexible fetch wrapper for Javascript!
 
 - ➖ Direct access to methods
