@@ -13,6 +13,10 @@
     "format": "prettier . --write",
     "lint": "tsc"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pietrodev07/enfetch.git"
+  },
   "keywords": [
     "fetch",
     "wrapper",
