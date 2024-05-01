@@ -12,7 +12,7 @@ Enfetch is a lightweight, simple and flexible fetch wrapper for Javascript!
 ## Installation
 
 ```bash
-pnpm install enfetch
+pnpm add enfetch.js
 ```
 
 _Alternatively, you can use your favorite package manager._
@@ -22,7 +22,7 @@ _Alternatively, you can use your favorite package manager._
 To use enfetch in your project, import it and create an instance of the `Enfetch` class:
 
 ```ts
-import { Enfetch } from "enfetch";
+import { Enfetch } from "enfetch.js";
 
 const enfetch = new Enfetch();
 ```
