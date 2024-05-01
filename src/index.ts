@@ -1,1 +1,1 @@
-export { enfetch } from "./classes/enfetch";
+export { Enfetch } from "./classes/enfetch";

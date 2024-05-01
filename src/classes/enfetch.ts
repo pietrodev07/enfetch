@@ -1,7 +1,7 @@
 import { DefaultRequestConfig, RequestSchema } from "../types";
 import { request } from "../utils/request";
 
-export class enfetch {
+export class Enfetch {
   protected defaultConfig: DefaultRequestConfig;
 
   public constructor(config: DefaultRequestConfig = {}) {

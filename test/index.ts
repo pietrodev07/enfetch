@@ -1,7 +1,7 @@
-import { enfetch } from "../src";
+import { Enfetch } from "../src";
 import { ResTodo, resTodoSchema } from "./types";
 
-const http = new enfetch();
+const http = new Enfetch();
 
 /* GET WITHOUT ZOD */
 const withoutZod = async () => {
