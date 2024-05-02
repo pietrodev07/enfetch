@@ -52,7 +52,7 @@ If you need to make an HTTP request with a custom method, you can use the `any` 
 const customMethod = "CUSTOM";
 const url = "[url]";
 
-const response = await enfetch.any(url, method);
+const response = await enfetch.any(url, customMethod);
 console.log(response.data);
 ```
 
