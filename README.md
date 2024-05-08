@@ -72,6 +72,27 @@ const enfetch = new Enfetch(customConfig);
 
 The `customConfig` object allows you to set the `timeout` for requests, specify the number of `maxRetries` for failed requests, and set a `retryDelay` between retries.
 
+## Typing with typescript
+
+For example you can type the response data:
+
+```ts
+interface ResponseData {}
+
+const url = "[url]";
+const response = await enfetch.get<ResponseData>(url);
+```
+
+or you can type the body of the request:
+
+```ts
+interface Body {}
+interface ResponseData {}
+
+const url = "[url]";
+const response = await enfetch.post<Body, ResponseData>(url);
+```
+
 ## Contributions
 
 Contributions are always welcome! Feel free to create issues following the rules in the `CONTRIBUTING.md` file!
