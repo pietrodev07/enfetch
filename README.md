@@ -93,6 +93,20 @@ const url = "[url]";
 const response = await enfetch.post<Body, ResponseData>(url);
 ```
 
+## Validation with zod
+
+You can valid the response data with zod:
+
+```ts
+const responseDataSchema = z.object();
+type ResponseData = z.infer<typeof responseDataSchema>;
+
+const url = "[url]";
+const response = await enfetch.get<ResponseData>(url, {
+  schema: responseDataSchema,
+});
+```
+
 ## Contributions
 
 Contributions are always welcome! Feel free to create issues following the rules in the `CONTRIBUTING.md` file!
